@@ -1,12 +1,12 @@
 input.onButtonPressed(Button.A, function () {
-    Brightness += -10
-    led.setBrightness(Brightness)
+    led.setBrightness(100)
+})
+input.onButtonPressed(Button.AB, function () {
+    led.setBrightness(0)
 })
 input.onButtonPressed(Button.B, function () {
-    Brightness += 10
-    led.setBrightness(Brightness)
+    led.setBrightness(255)
 })
-let Brightness = 0
 basic.showLeds(`
     # # # # #
     # # # # #
